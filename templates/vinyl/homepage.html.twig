@@ -1,15 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Create a task | {{ parent() }} {% endblock %}
+
+{% block body %}
 <h1>{{ title }}</h1>
 
 <div>
-    Tracks:
+    Tasks:
 
     <ul>
-        {% for track in tracks %}
+        {% for task in tasks %}
 
         <li>
-            {{ track.song }} - {{ track.artist }}
+            {{ task.name }} - {{ task.status }}
         </li>
 
         {% endfor %}
     </ul>
 </div>
+
+{% endblock %}
