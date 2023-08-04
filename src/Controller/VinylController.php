@@ -38,5 +38,5 @@ class VinylController extends AbstractController
             $title = "All Genres";
         }
         return new Response($title);
-    }
+    }  
 }
