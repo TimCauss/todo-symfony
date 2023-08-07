@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use function Symfony\Component\String\u;
 
-class VinylController extends AbstractController
+class MainController extends AbstractController
 {
     #[Route('/')]
     public function homepage(): Response
@@ -23,8 +23,8 @@ class VinylController extends AbstractController
         ];
 
 
-        return $this->render('vinyl/homepage.html.twig', [
-            'title' => 'Ceci est la variable title',
+        return $this->render('Todo/homepage.html.twig', [
+            'title' => 'Tasks List:',
             'tasks' => $tasks,
         ]);
     }
@@ -38,5 +38,5 @@ class VinylController extends AbstractController
             $title = "All Genres";
         }
         return new Response($title);
-    }  
+    }
 }
