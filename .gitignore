@@ -12,3 +12,4 @@
 ###< symfony/framework-bundle ###
 .env
 docker-compose.yml.postgresql
+docker-compose.yaml
