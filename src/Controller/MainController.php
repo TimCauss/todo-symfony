@@ -29,14 +29,9 @@ class MainController extends AbstractController
         ]);
     }
 
-    #[Route('/browse/{slug}')]
-    public function browse(string $slug = null): Response
+    #[Route('/login')]
+    public function loginPage(): Response
     {
-        if ($slug) {
-            $title = 'Genre: ' . u(str_replace('-', ' ', $slug))->title(true);
-        } else {
-            $title = "All Genres";
-        }
-        return new Response($title);
+        return $this->render('Todo/loginpage.html.twig');
     }
 }
