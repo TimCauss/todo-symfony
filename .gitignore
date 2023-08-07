@@ -8,4 +8,6 @@
 /public/bundles/
 /var/
 /vendor/
+/docker-compose.yml
+/docker-compose.override.yml
 ###< symfony/framework-bundle ###
