@@ -12,21 +12,7 @@ class MainController extends AbstractController
     #[Route('/')]
     public function homepage(): Response
     {
-
-        $tasks = [
-            ['name' => 'Gangaga\'s Paradise', 'status' => 'Coolio'],
-            ['name' => 'Waterfalls', 'status' => 'TLC'],
-            ['name' => 'Creep', 'status' => 'Radiohead'],
-            ['name' => 'Kiss from a Rose', 'status' => 'Seal'],
-            ['name' => 'On Bended Knee', 'status' => 'Boyz II Men'],
-            ['name' => 'Fantasy', 'status' => 'Mariah Carey'],
-        ];
-
-
-        return $this->render('Todo/homepage.html.twig', [
-            'title' => 'Tasks List:',
-            'tasks' => $tasks,
-        ]);
+        return $this->render('Todo/homepage.html.twig');
     }
 
     #[Route('/login')]
