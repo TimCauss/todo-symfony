@@ -9,7 +9,7 @@ use function Symfony\Component\String\u;
 
 class MainController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', name: 'app_main_homepage')]
     public function homepage(): Response
     {
         return $this->render('Todo/homepage.html.twig');
