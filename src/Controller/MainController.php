@@ -21,13 +21,6 @@ class MainController extends AbstractController
         return $this->render('Todo/loginpage.html.twig');
     }
 
-    
-    #[Route('/register')]
-    public function registerPage(): Response
-    {
-        return $this->render('Todo/registerpage.html.twig');
-    }
-
     #[Route('/forgot')]
     public function forgotPage(): Response
     {
