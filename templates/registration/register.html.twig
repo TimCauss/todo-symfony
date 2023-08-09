@@ -15,17 +15,19 @@
                   Sign up to your account
               </h1>
               <form class="space-y-4 md:space-y-6" action="#">
-                 <div>
-                      <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+                 <div class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       {{ form_row(registrationForm.username) }}
                   </div>
-                  <div>
+                  <div class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   {{ form_row(registrationForm.plainPassword, {
                       label: 'Password'
                       }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+                  </div>
+                    <div class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+{{ form_row(registrationForm.agreeTerms) }}
                   </div>
                   <div class="flex items-center justify-between">
+                  
                       <div class="flex items-start">
                           <div class="flex items-center h-5">
                           </div>
