@@ -6,10 +6,17 @@
         <a href="/" class="flex items-center">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">To Do List</span>
         </a>
+    {% if not app.user %}
         <div class="flex items-center">
             <a href="/login"><button
                     class="text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">Login</button></a>
         </div>
+    {% endif %}
+    {% if app.user %}
+        <div class="flex items-center">
+            <a href="{{ path('app_logout') }}"><button class="text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">Logout</button></a>
+        </div>
+    {% endif %}
     </div>
 </nav>
 {# Menu de navigation entre les page principales #}

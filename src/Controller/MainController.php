@@ -20,4 +20,11 @@ class MainController extends AbstractController
     {
         return $this->render('Todo/forgotpage.html.twig');
     }
+
+    #[Route('/dashboard', name: 'app_dashboard')]
+    public function dashboard(): Response
+    {
+        return $this->render('Todo/dashboard.html.twig');
+    }
+    
 }
