@@ -27,7 +27,11 @@
                 <td>{{ task.Priority }}</td>
                 <td>{{ task.createdBy }}</td>
                 <td>
+<<<<<<< HEAD
                 {% if app.user and app.user.email == task.createdBy %}
+=======
+                {% if app.user.email == task.createdBy %}
+>>>>>>> 672b2c6d9e8d024b2a7bc116a83d9b143f112971
                     <a href="{{ path('app_task_show', {'id': task.id}) }}">show</a>
                     <a href="{{ path('app_task_edit', {'id': task.id}) }}">edit</a>
                 {% endif %}
